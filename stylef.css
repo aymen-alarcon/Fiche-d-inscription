@@ -1,0 +1,22 @@
+.col-md-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-2 button{
+    width: 110px;
+    margin: 5px;
+}
+
+.col-md-3 input{
+    margin: 5px;
+}
+
+.col-md-3 label{
+    margin-right: 50px;
+}
+.selected{ 
+    background-color: #4CAF50;
+}
