@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylef.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fiche D'Inscription</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <form action="" id="studentForm">
+                <lable>Num</lable>
+                <input type="text" name="" class="input" id="num"><br>
+                <lable>Nom</lable>
+                <input type="text" name="" class="input" id="nom"><br>
+                <lable>Prénom</lable>
+                <input type="text" name="" class="input" id="prenom"><br>
+                <lable>Sexe</lable>
+                <input type="radio" name="sexe" value="Homme">Homme
+                <input type="radio" name="sexe" value="Femme">Femme <br>
+                <lable>Branche</lable>
+                <select id="branche">
+                    <option value="choose a branche" disabled selected>choose a branche</option>
+                    <option value="finance">finance</option>
+                    <option value="info">info</option>
+                    <option value="management">management</option>
+                </select>
+            </form>
+        </div>
+        <div class="col-md-2">
+            <h3>Actions</h3>
+            <button onclick="jdid()">Nouveau</button>
+            <button onclick="addEntry()" id="ajouter">Ajouter</button>
+            <button onclick="update()" id="modifier">Modifier</button>
+            <button onclick="deleteEntry()" id="supprimer">Supprimer</button>
+            <button onclick="vider()">Vider</button>
+        </div>
+        <div class="col-md-7">
+         <table class="table table-striped" id="table">
+            <thead>
+                    <tr>
+                        <td>Num</td>
+                        <td>Nom</td>
+                        <td>Prénom</td>
+                        <td>Sexe</td>
+                        <td>Branche</td>
+                    </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <button onclick="suivant()">Suivant</button>
+            <button onclick="premier()">Premier</button>
+            <button onclick="dernier()">Dérnier</button>
+            <button onclick="precedent()">Précedent</button>
+         </table>
+        </div>
+    </div>
+    <div id="branchCountDisplay" class="mt-4">
+        <h4>Branch Counts</h4>
+    </div>    
+</body>
+<script src="scriptf.js"></script>
+</html>
